@@ -28,7 +28,7 @@ class CompanyAPITests(APITestCase):
 
     def test_create_company(self):
         """
-        Test for creating a company - Убедимся, что мы можем создать новое предприятие.
+        Test for creating a company
         """
         url = reverse('company-list')
         response = self.client.post(url, self.valid_data, format='json')
@@ -37,7 +37,7 @@ class CompanyAPITests(APITestCase):
 
     def test_get_company_list(self):
         """
-        Test for getting a list of companies - Убедимся, что мы можем получить список предприятий.
+        Test for getting a list of companies
         """
         url = reverse('company-list')
         response = self.client.get(url)
@@ -46,7 +46,7 @@ class CompanyAPITests(APITestCase):
 
     def test_get_company_detail(self):
         """
-        Test for getting a companies details - Убедимся, что мы можем получить детали конкретного предприятия.
+        Test for getting a companies details
         """
         url = reverse('company-detail', args=[self.company.id])
         response = self.client.get(url)
@@ -55,7 +55,7 @@ class CompanyAPITests(APITestCase):
 
     def test_update_company(self):
         """
-        Test for updating a company - Убедимся, что мы можем обновить предприятие.
+        Test for updating a company
         """
         url = reverse('company-detail', args=[self.company.id])
         response = self.client.put(url, self.valid_data, format='json')
@@ -65,7 +65,7 @@ class CompanyAPITests(APITestCase):
 
     def test_delete_company(self):
         """
-        Test for deleting a company - Убедимся, что мы можем удалить предприятие.
+        Test for deleting a company
         """
         url = reverse('company-detail', args=[self.company.id])
         response = self.client.delete(url)
