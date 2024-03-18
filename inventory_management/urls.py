@@ -33,8 +33,6 @@ router.register(r'companies', CompanyViewSet, basename='company')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    # Пути для авторизации и токенов (если нужно)
-    # path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
 
 if settings.DEBUG:
