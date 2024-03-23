@@ -27,10 +27,11 @@
 ```bash
 git clone <ссылка на ваш репозиторий>
 cd <имя вашего проекта>
-
+```
 2) Запустите приложение с помощью Docker Compose:
+```bash
 docker-compose up --build
-
+```
 После запуска приложение будет доступно по адресу http://localhost:8000/.
 
 Использование API
@@ -38,5 +39,6 @@ docker-compose up --build
 
 Тестирование
 Для запуска тестов используйте следующую команду:
-
+```bash
 docker-compose run web python manage.py test
+```
