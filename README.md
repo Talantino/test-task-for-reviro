@@ -47,7 +47,7 @@ curl -X POST http://localhost:8000/products/ -H 'Content-Type: application/json'
 ```
 Getting the list of products:
 ```bash
-curl -X GET http://localhost:8000/products/
+curl -X GET http://localhost:8000/api/products/
 ```
 ## 🔎 Exploring and Testing API with Swagger
 
