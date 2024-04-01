@@ -34,7 +34,7 @@ The Inventory Management System, built using Django REST Framework and Docker, i
       docker-compose up --build
       ```
 
-After starting the application, the API will be available at http://localhost:8000/, and the Swagger documentation can be accessed at http://localhost:8000/swagger/.
+After starting the application, the API will be available at http://localhost:8000/, and the Swagger documentation can be accessed at http://localhost:8000/api/docs/.
 
 
 ## 🕹️ Using the API
